@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title><!-- border box means  border ka size jo bada karne se actual height width me diffrence aata hai box sizing se boreder sixe ke ander hi fix ho jata hAI  -->
+    <style>
+ *{
+      height: 50px;
+      width: 50px;  
+    }
+    #first{
+        background-color: aquamarine;
+        border:solid 5px;
+ box-sizing: border-box;
+    }
+    #second{
+        background-color: blue;
+        border: solid 20px;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <div id="first">first </div>
+    <div id="second">second </div>
+</body>
+</html>

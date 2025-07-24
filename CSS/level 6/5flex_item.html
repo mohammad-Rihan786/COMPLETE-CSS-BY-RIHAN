@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+       #containeer{
+            height: 600px;
+            width: 600px;
+            background-color: aqua;
+            border: 3px solid black ;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          
+        /*  align-items: center;/* this one is alighn property use for slide element upper and lower and end  uper neeche kar sakte hai */
+        
+      /* align-content: center;/* isse beech me jo space aa rha tha vo ni aayega last element bht neech ja rha tha ab same space hoga sabme iske priority zyada hai align self se  */
+    
+       }
+        
+        #box1{
+background-color: red;
+ 
+
+        }
+         #box2{
+background-color: blue;
+order: 4;/* means this one is order four then it will come at last */ 
+
+        }
+         #box3{
+background-color: green;
+flex-shrink: 4;/*when we write shrink o then other are shrink but box 3 is not */
+
+        }
+         #box4{
+background-color: yellow;
+flex-grow: 2;/* when some space is empty then box 4 is automatically grow  is you write two then it is grow double time */
+        }
+        .box{
+            height: 75px;
+            width: 75px;
+            margin: 5px;
+            border: 3px solid black;
+            flex-grow: 1;
+
+        }
+    
+    </style>
+</head>
+<body>
+   
+
+    <h1 id="h1"> flex container </h1>
+    <div id="containeer">
+        <div id="box1"class="box">box1</div>
+         <div id="box2"class="box">box2</div>
+          <div id="box3"class="box">box3</div>
+           <div id="box4"class="box">box4</div>
+    </div>
+
+</body>
+</html>

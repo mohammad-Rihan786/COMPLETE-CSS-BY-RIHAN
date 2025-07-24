@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+       #containeer{
+            height: 600px;
+            width: 600px;
+            background-color: aqua;
+            border: 3px solid black ;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;/* agar  space kaam karenge to automatic last box neeche chala jyga and we can also use wrap reverse jisse saare ulte ho jynge jese last vaala neeche nhi uper chala jyga */
+          align-items: start;/* this one is alighn property use for slide element upper and lower and end  uper neeche kar sakte hai */
+        
+       align-content: start;/* isse beech me jo space aa rha tha vo ni aayega last element bht neech ja rha tha ab same space hoga sabme iske priority zyada hai align self se  */
+       
+             
+        }
+        #box1{
+background-color: red;
+ 
+
+        }
+         #box2{
+background-color: blue;
+align-self: center;/*isse ek particular elemen ko moove kra sakte hai but align content ko hta kar hi kaam karega kyunki uski priority zyada hai  */
+        }
+         #box3{
+background-color: green;
+flex-shrink: 4;
+
+        }
+         #box4{
+background-color: yellow;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border: 3px solid black;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <image src="flexbox.png" height="200px" width="600px"></image>
+
+    <h1 id="h1"> flex container </h1>
+    <div id="containeer">
+        <div id="box1"class="box">box1</div>
+         <div id="box2"class="box">box2</div>
+          <div id="box3"class="box">box3</div>
+           <div id="box4"class="box">box4</div>
+    </div>
+
+</body>
+</html>

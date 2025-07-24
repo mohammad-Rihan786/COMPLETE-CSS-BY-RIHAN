@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>animation from or to karte hai jha se start hoga or jha khatam hoga kuch jese left right moove karana ho 5 baar ya kuch or </title>
+    <style>
+        #button{
+             height: 25px;
+             width: 100px;
+             background-color: aqua;
+             border-radius: 10px;
+             text-align: center;
+             border: solid black;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            
+             position: relative;
+            animation-name: rihan;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;/* normal bhi kar sakte hai or reverse bhi */
+        }
+          @keyframes rihan {
+            from{
+                left:10px
+
+            }
+            to{left: 200px;}
+            
+             
+             
+
+            
+
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div id="button"> click me </div>
+   
+</body>
+</html>

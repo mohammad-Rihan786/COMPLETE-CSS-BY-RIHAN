@@ -1,0 +1,6 @@
+   h1 {/* element selectorbhi khte hai same name ka color same hoga like saare h1 la color same hoga  */
+            color:red ;
+        }
+        p{
+            color: green;
+        }/*is code ko link karenge doosri html file me to usko external stylink khte hai 

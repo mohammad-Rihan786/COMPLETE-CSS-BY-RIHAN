@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>curser ko button pr lati hi color change ho jyga </title>
+    <style>
+        #button{
+             height: 25px;
+             width: 100px;
+             background-color: aqua;
+             border-radius: 10px;
+             text-align: center;
+             border: solid black;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             transition-property: all;
+             transition-duration: 1s;
+             transition-timing-function: ease-in-out;/* ease in out ki jgah steps bhi kar sakte hai */
+             transition-delay: 1s;
+             margin: 50px 50px 50px 50px;
+            
+             
+             
+
+            
+
+        }
+        #button:hover{
+            height: 75px;
+            width: 100px;
+            background-color: red;
+ transform: skew(2);/* use for rotate or we can do "skew" or "rotatex" or y and z scale se bada hota hai two times and and "translate" is shift left right upper and lower " */
+ translate: (50px);
+        }
+         #button:active{/* click karne par changes honge */
+            height: 75px;
+            width: 100px;
+            background-color: red;
+            border: dotted green;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="button"> click me </div>
+    <image src="image.png" height="100px" width="100px"></image>
+</body>
+</html>
